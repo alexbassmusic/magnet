@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+    <name>com_magnet</name>
+    <creationDate>2013-10-25</creationDate>
+    <copyright>© 2013. All Rights Reserved.</copyright>
+    <license>GNU General Public License v2.0; See LICENSE.txt</license>
+    <author>Alexander.B</author>
+    <authorEmail>alexbassmusic@gmail.com</authorEmail>
+    <authorUrl>https://www.odesk.com/users/~01ae8f6e1a81c189cf</authorUrl>
+    <version>1.0.0</version>
+    <description>This component helps to 	retrieve the customers, which bought products in Your Joomla+Virtuemart shop.
+</description>
+    
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>magnet.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+    </files>
+    <languages folder="site">
+        
+			<language tag="en-GB">language/en-GB.com_magnet.ini</language>
+			<language tag="en-US">language/en-US.com_magnet.ini</language>
+			<language tag="ru-RU">language/ru-RU.com_magnet.ini</language>
+			<language tag="es-ES">language/es-ES.com_magnet.ini</language>
+    </languages>
+    <administration>
+        <menu img="components/com_magnet/assets/images/s_com_magnet.png" >COM_MAGNET</menu>
+        <submenu>
+            
+			<menu link="option=com_magnet&amp;view=magnets" view="magnets" img="components/com_magnet/assets/images/s_magnets.png" alt="Magnet/Magnets">COM_MAGNET_TITLE_MAGNETS</menu>
+
+        </submenu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>magnet.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="administrator">
+            
+			<language tag="en-GB">language/en-GB.com_magnet.ini</language>
+			<language tag="en-GB">language/en-GB.com_magnet.sys.ini</language>
+			<language tag="en-US">language/en-US.com_magnet.ini</language>
+			<language tag="en-US">language/en-US.com_magnet.sys.ini</language>
+			<language tag="ru-RU">language/ru-RU.com_magnet.ini</language>
+			<language tag="ru-RU">language/ru-RU.com_magnet.sys.ini</language>
+			<language tag="es-ES">language/es-ES.com_magnet.ini</language>
+			<language tag="es-ES">language/es-ES.com_magnet.sys.ini</language>
+        </languages>
+    </administration>
+</extension>
+<!-- Component built by the Joomla Component Creator -->
+<!-- http://www.notwebdesign.com/joomla-component-creator/ -->
