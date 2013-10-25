@@ -43,7 +43,7 @@
         <menu img="components/com_magnet/assets/images/s_com_magnet.png" >COM_MAGNET</menu>
         <submenu>
             
-			<menu link="option=com_magnet&amp;view=magnets" view="magnets" img="components/com_magnet/assets/images/s_magnets.png" alt="Magnet/Magnets">COM_MAGNET_TITLE_MAGNETS</menu>
+			<menu link="option=com_magnet&amp;view=magnets" view="magnets" img="components/com_magnet/assets/images/s_com_magnet.png" alt="Magnet/Magnets">COM_MAGNET_TITLE_MAGNETS</menu>
 
         </submenu>
         <files folder="administrator">
