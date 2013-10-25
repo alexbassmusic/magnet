@@ -1,4 +1,4 @@
 Magnet
 ======
 
-Magnet component. Joomla based component, that helps to retrieve customers back to the Your e-shop.
+Magnet component.The Joomla based component, that helps to retrieve customers back to the Your e-shop.
